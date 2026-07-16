@@ -23,7 +23,7 @@
         "@types/bun": "*",
         "@types/rocksdb": "^3.0.5",
         "tsc-alias": "^1",
-        "typescript": "^6"
+        "typescript": "^7.0.0"
     },
     "files": [
         "dist"
