@@ -165,8 +165,8 @@ export class RocksValthera extends ActionsBase {
 }
 
 export function createRocksValthera<T extends Record<string, Data> = {}>(location: string, opts?: RocksOpenOptions) {
-    const dbAction = new RocksValthera(location, opts);
-    const db = new ValtheraClass({ dbAction });
+    const adapter = new RocksValthera(location, opts);
+    const db = new ValtheraClass({ adapter });
     return forgeTypedValthera<T>(db);
 }
 
